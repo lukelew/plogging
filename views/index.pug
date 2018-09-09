@@ -1,6 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p(title='test text') test
+  div#section1
+    nav
+      ul
+        - var navContent = ['Home','News','Moments','Honour Wall','E-shop']
+          each val in navContent
+            li 
+              a(href="#"+val +".html" data-hover=val)
+                span= val
+    h1 plogging
+    a#arrow story
+  div#section2
