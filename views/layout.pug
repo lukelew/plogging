@@ -1,7 +1,20 @@
 doctype html
 html
   head
-    title= 'Know more and join in the plogging'
-    link(rel='stylesheet', href='/stylesheets/index.css')
+    title= 'Plogging Sydney'
+    link(rel='stylesheet', href='/stylesheets/base.css')
+    block stylesheets
   body
+    nav
+      ul
+        - var navContent = ['Home','Join Activites','Moments','Honour Wall','About us']
+          each val in navContent
+            li 
+              a(href="#"+val +".html" data-hover=val)
+                span= val
     block content
+
+  footer
+    h2 contact
+    form
+      textarea

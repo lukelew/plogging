@@ -1,14 +1,19 @@
 extends layout
 
+block stylesheets
+  link(rel='stylesheet', href='/stylesheets/home.css')
+
 block content
   div#section1
-    nav
-      ul
-        - var navContent = ['Home','News','Moments','Honour Wall','E-shop']
-          each val in navContent
-            li 
-              a(href="#"+val +".html" data-hover=val)
-                span= val
     h1 plogging
     a#arrow story
   div#section2
+    div.avatar
+      img(src="../images/erik.jpg")
+    div.info
+      h2 erik story
+      p Plogging is a combination of jogging with picking up litter. It started as an organised activity in Sweden around 2016 and spread to other countries in 2018, following increased concern about plastic pollution. As a workout, it provides variation in body movements by adding bending, squatting and stretching to the main action of running.[1][2][3] The term is a portmanteau word formed from the Swedish "plocka" (pick up) and jogging.[4]
+      p Author David Sedaris combines litter picking with exercise in the Parham, Coldwaltham and Storrington districts of West Sussex, taking up to 60,000 steps a day in pursuit of local rubbish.[5] He was so effective in keeping his neighbourhood clean that the local authority named a waste vehicle in his honour.[6] The Lord Lieutenant of West Sussex, Susan Pyper, said "The sign on this truck is a very fitting way to say a huge ‘thank you’ to David for his tireless efforts ... he is a real local hero."[7]  
+      p Plogging is a combination of jogging with picking up litter. It started as an organised activity in Sweden around 2016 and spread to other countries in 2018, following increased concern about plastic pollution. As a workout, it provides variation in body movements by adding bending, squatting and stretching to the main action of running.[1][2][3] The term is a portmanteau word formed from the Swedish "plocka" (pick up) and jogging.[4]
+    div.clear
+
