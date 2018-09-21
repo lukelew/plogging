@@ -1,5 +1,5 @@
 /* line 1, ../sass/join-activity.scss */
 #join {
-  color: blue;
-  background: red;
+  width: 1000px;
+  margin: 0 auto;
 }

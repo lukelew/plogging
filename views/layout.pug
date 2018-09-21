@@ -7,11 +7,21 @@ html
   body
     nav
       ul
-        - var navContent = ['Home','Join Activites','Moments','Honour Wall','About us']
-          each val in navContent
-            li 
-              a(href="#"+val +".html" data-hover=val)
-                span= val
+        li 
+          a(href="/")
+            span Home
+        li 
+          a(href="join-activity")
+            span Join Activites
+        li 
+          a(href="moments")
+            span Moments
+        li 
+          a(href="honor-wall")
+            span Honor Wall
+        li 
+          a(href="about-us")
+            span About us
     block content
 
   footer
