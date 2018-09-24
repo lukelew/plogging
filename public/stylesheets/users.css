@@ -1,0 +1,35 @@
+/* line 1, ../sass/users.scss */
+#register_form {
+  width: 1000px;
+  margin: 0 auto;
+  background: #eee;
+}
+/* line 6, ../sass/users.scss */
+#register_form form {
+  width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* line 11, ../sass/users.scss */
+#register_form form .row {
+  margin: 0 0 10px 0;
+}
+/* line 14, ../sass/users.scss */
+#register_form form .row span {
+  display: inline-block;
+  width: 80px;
+}
+/* line 18, ../sass/users.scss */
+#register_form form .row input[type="text"], #register_form form .row input[type="password"] {
+  height: 28px;
+  padding: 0 6px;
+  border: 1px #aaa solid;
+  border-radius: 3px;
+}
+/* line 24, ../sass/users.scss */
+#register_form form .row #submit {
+  display: block;
+  padding: 6px 20px;
+  width: 120px;
+  margin: 0 auto;
+}

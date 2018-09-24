@@ -1,0 +1,33 @@
+#register_form{
+  width: 1000px;
+  margin: 0 auto;
+  background: #eee;
+
+  form{
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+
+    .row{
+      margin: 0 0 10px 0;
+
+      span{
+        display: inline-block;
+        width: 80px;
+      }
+      input[type="text"],input[type="password"]{
+        height: 28px;
+        padding: 0 6px;
+        border: 1px #aaa solid;
+        border-radius: 3px;
+      }
+      #submit{
+        display: block;
+        padding: 6px 20px;
+        width:120px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+}
