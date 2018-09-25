@@ -1,7 +1,13 @@
 #register_form{
-  width: 1000px;
-  margin: 0 auto;
   background: #eee;
+
+  h2{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    font-size: 24px;
+    color: #73a770;
+  }
 
   form{
     width: 400px;
@@ -15,6 +21,13 @@
         display: inline-block;
         width: 80px;
       }
+      .radio_title{
+        display: inline-block;
+        margin: 0 15px 0 0;
+      }
+      input[type="radio"]{
+        margin: 0 6px 0 0;
+      }
       input[type="text"],input[type="password"]{
         height: 28px;
         padding: 0 6px;
@@ -26,8 +39,26 @@
         padding: 6px 20px;
         width:120px;
         margin: 0 auto;
+        color: #fff;
+        background: #73a770;
+        border: 1px #478254 solid;
+        border-radius: 3px;
       }
     }
-  }
+  } 
+}
+
+#login_form{
+  margin: 0 auto;
+  background: #eee;
+
+  form{
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
   
+    .row{
+      margin: 0 0 10px 0;
+    }
+  }
 }

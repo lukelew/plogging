@@ -1,0 +1,16 @@
+extends layout
+
+block stylesheets
+  link(rel='stylesheet', href='/stylesheets/users.css')
+
+block content
+  #login_form
+    form(method="post" action="/users/login")
+      .row
+        span email
+        input(type="text" name="email")
+      .row
+        span password
+        input(type="password" name="password")
+      .row
+        input(id="submit" type="submit" value="submit!")

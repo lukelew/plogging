@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= 'Plogging Sydney'
+    title= 'Plogging.Au'
     link(rel='stylesheet', href='/stylesheets/base.css')
     block stylesheets
   body
@@ -11,23 +11,26 @@ html
           a(href="/")
             span Home
         li 
-          a(href="join-activity")
+          a(href="/join-activity")
             span Join Activites
         li 
-          a(href="moments")
+          a(href="/moments")
             span Moments
         li 
-          a(href="honor-wall")
+          a(href="/honor-wall")
             span Honor Wall
         li 
-          a(href="about-us")
+          a(href="/about-us")
             span About us
         #login
-          a(href="users") login
-          a(href="users/register") sign up
+          a(href="/users/login") login
+          a(href="/users/register") sign up
     block content
 
   footer
-    h2 contact
-    form
-      textarea
+    #footer_inner
+      #contact_form
+        h2 contact
+        form
+          textarea
+      .clear

@@ -5,13 +5,17 @@ block stylesheets
 
 block content
   #register_form
+    h2 Sign Up
     form(method="post" action="/users/register")
       .row
         span name
         input(type="text" name="name")
       .row
         span gender
-        input(type="text" name="gender")
+        input(type="radio" name="gender" value="male")
+        p.radio_title male
+        input(type="radio" name="gender" value="female")
+        p.radio_title femal
       .row
         span email
         input(type="text" name="email")

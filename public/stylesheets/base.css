@@ -26,15 +26,15 @@ nav ul {
   justify-content: center;
   line-height: 80px;
 }
-/* line 22, ../sass/base.scss */
+/* line 23, ../sass/base.scss */
 nav ul li {
   margin: 0 40px;
 }
-/* line 25, ../sass/base.scss */
+/* line 26, ../sass/base.scss */
 nav ul li a {
   overflow: hidden;
 }
-/* line 28, ../sass/base.scss */
+/* line 29, ../sass/base.scss */
 nav ul li a span {
   display: block;
   color: #999;
@@ -44,13 +44,43 @@ nav ul li a span {
   text-decoration: none;
   transition: color .3s;
 }
-/* line 38, ../sass/base.scss */
+/* line 39, ../sass/base.scss */
 nav ul li a:hover span {
   color: #339966;
 }
+/* line 47, ../sass/base.scss */
+nav #login a {
+  font-size: 12px;
+  color: #666;
+  padding: 0 2px;
+}
 
-/* line 46, ../sass/base.scss */
+/* line 55, ../sass/base.scss */
 footer {
   padding: 20px;
   background: #333;
+}
+/* line 59, ../sass/base.scss */
+footer #footer_inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 63, ../sass/base.scss */
+footer #footer_inner #contact_form {
+  float: right;
+}
+/* line 66, ../sass/base.scss */
+footer #footer_inner #contact_form h2 {
+  color: #aaa;
+  margin: 0 0 10px 0;
+}
+/* line 71, ../sass/base.scss */
+footer #footer_inner #contact_form form textarea {
+  padding: 10px;
+  border: 1px #ccc solid;
+  border-radius: 3px;
+  width: 300px;
+  height: 110px;
+  font-size: 12px;
+  resize: none;
 }
