@@ -1,12 +1,12 @@
-#register_form{
+#register-form{
   background: #eee;
-
-  h2{
+  
+  .errors{
     width: 400px;
     margin: 0 auto;
-    padding: 20px 0 0 0;
-    font-size: 24px;
-    color: #73a770;
+    padding: 5px 0 0 0;
+    color: #a00;
+    font-size: 12px;
   }
 
   form{
@@ -28,12 +28,6 @@
       input[type="radio"]{
         margin: 0 6px 0 0;
       }
-      input[type="text"],input[type="password"]{
-        height: 28px;
-        padding: 0 6px;
-        border: 1px #aaa solid;
-        border-radius: 3px;
-      }
       #submit{
         display: block;
         padding: 6px 20px;
@@ -48,7 +42,7 @@
   } 
 }
 
-#login_form{
+#login-form{
   margin: 0 auto;
   background: #eee;
 
@@ -59,6 +53,43 @@
   
     .row{
       margin: 0 0 10px 0;
+
+      span{
+        display: inline-block;
+        width: 80px;
+      }
+      
+      #submit{
+        display: block;
+        padding: 6px 20px;
+        width:120px;
+        margin: 0 auto;
+        color: #fff;
+        background: #73a770;
+        border: 1px #478254 solid;
+        border-radius: 3px;
+      }
     }
   }
+}
+input[type="text"],input[type="password"]{
+  height: 28px;
+  padding: 0 6px;
+  border: 1px #aaa solid;
+  border-radius: 3px;
+  outline: none;
+  background: #f3f3f3;
+  transition: all .3s ease;
+
+  &:focus{
+    border: 1px #0a0 solid;
+    background: #fff;
+  }
+}
+#form-title{
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  font-size: 24px;
+  color: #73a770;
 }

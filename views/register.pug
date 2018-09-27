@@ -4,23 +4,24 @@ block stylesheets
   link(rel='stylesheet', href='/stylesheets/users.css')
 
 block content
-  #register_form
-    h2 Sign Up
+  #register-form
+    h2#form-title Sign Up
+    p.errors #{errors}
     form(method="post" action="/users/register")
       .row
-        span name
-        input(type="text" name="name")
+        span Name
+        input(type="text" name="name" autocomplete="off")
       .row
-        span gender
+        span Gender
         input(type="radio" name="gender" value="male")
         p.radio_title male
         input(type="radio" name="gender" value="female")
         p.radio_title femal
       .row
-        span email
-        input(type="text" name="email")
+        span Email
+        input(type="text" name="email" autocomplete="off")
       .row
-        span password
+        span Password
         input(type="password" name="password")
       .row
         input(id="submit" type="submit" value="submit!")

@@ -1,4 +1,4 @@
-var db = require('../db');
+var db = require('../config/db');
 
 var UserSchema = new db.Schema({
   name: {

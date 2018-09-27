@@ -1,48 +1,41 @@
 /* line 1, ../sass/users.scss */
-#register_form {
+#register-form {
   background: #eee;
 }
 /* line 4, ../sass/users.scss */
-#register_form h2 {
+#register-form .errors {
   width: 400px;
   margin: 0 auto;
-  padding: 20px 0 0 0;
-  font-size: 24px;
-  color: #73a770;
+  padding: 5px 0 0 0;
+  color: #a00;
+  font-size: 12px;
 }
 /* line 12, ../sass/users.scss */
-#register_form form {
+#register-form form {
   width: 400px;
   padding: 20px;
   margin: 0 auto;
 }
 /* line 17, ../sass/users.scss */
-#register_form form .row {
+#register-form form .row {
   margin: 0 0 10px 0;
 }
 /* line 20, ../sass/users.scss */
-#register_form form .row span {
+#register-form form .row span {
   display: inline-block;
   width: 80px;
 }
 /* line 24, ../sass/users.scss */
-#register_form form .row .radio_title {
+#register-form form .row .radio_title {
   display: inline-block;
   margin: 0 15px 0 0;
 }
 /* line 28, ../sass/users.scss */
-#register_form form .row input[type="radio"] {
+#register-form form .row input[type="radio"] {
   margin: 0 6px 0 0;
 }
 /* line 31, ../sass/users.scss */
-#register_form form .row input[type="text"], #register_form form .row input[type="password"] {
-  height: 28px;
-  padding: 0 6px;
-  border: 1px #aaa solid;
-  border-radius: 3px;
-}
-/* line 37, ../sass/users.scss */
-#register_form form .row #submit {
+#register-form form .row #submit {
   display: block;
   padding: 6px 20px;
   width: 120px;
@@ -53,18 +46,59 @@
   border-radius: 3px;
 }
 
-/* line 51, ../sass/users.scss */
-#login_form {
+/* line 45, ../sass/users.scss */
+#login-form {
   margin: 0 auto;
   background: #eee;
 }
-/* line 55, ../sass/users.scss */
-#login_form form {
+/* line 49, ../sass/users.scss */
+#login-form form {
   width: 400px;
   padding: 20px;
   margin: 0 auto;
 }
-/* line 60, ../sass/users.scss */
-#login_form form .row {
+/* line 54, ../sass/users.scss */
+#login-form form .row {
   margin: 0 0 10px 0;
+}
+/* line 57, ../sass/users.scss */
+#login-form form .row span {
+  display: inline-block;
+  width: 80px;
+}
+/* line 62, ../sass/users.scss */
+#login-form form .row #submit {
+  display: block;
+  padding: 6px 20px;
+  width: 120px;
+  margin: 0 auto;
+  color: #fff;
+  background: #73a770;
+  border: 1px #478254 solid;
+  border-radius: 3px;
+}
+
+/* line 75, ../sass/users.scss */
+input[type="text"], input[type="password"] {
+  height: 28px;
+  padding: 0 6px;
+  border: 1px #aaa solid;
+  border-radius: 3px;
+  outline: none;
+  background: #f3f3f3;
+  transition: all .3s ease;
+}
+/* line 84, ../sass/users.scss */
+input[type="text"]:focus, input[type="password"]:focus {
+  border: 1px #0a0 solid;
+  background: #fff;
+}
+
+/* line 89, ../sass/users.scss */
+#form-title {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  font-size: 24px;
+  color: #73a770;
 }

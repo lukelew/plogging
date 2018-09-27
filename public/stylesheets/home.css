@@ -1,22 +1,26 @@
 /* line 1, ../sass/home.scss */
 #section1 {
   position: relative;
-  height: 500px;
-  background: url("../images/section1-bg.jpg");
+  height: 600px;
+  background: url("../images/home-bg.mp4");
   background-size: cover;
+  overflow: hidden;
 }
 
-/* line 7, ../sass/home.scss */
+/* line 8, ../sass/home.scss */
 h1 {
-  width: 421px;
-  height: 167px;
-  margin: 0 auto;
-  padding: 40px 0;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: 5;
+  margin: 0 0 0 -251px;
+  width: 503px;
+  height: 155px;
   text-indent: -9999px;
   background: url("../images/plogging-title.png") center center no-repeat;
 }
 
-/* line 15, ../sass/home.scss */
+/* line 19, ../sass/home.scss */
 #arrow {
   position: absolute;
   left: 50%;
@@ -43,32 +47,53 @@ h1 {
     opacity: 1;
   }
 }
-/* line 35, ../sass/home.scss */
+/* line 38, ../sass/home.scss */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: .25;
+}
+
+/* line 48, ../sass/home.scss */
+.video-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  min-width: 100%;
+}
+
+/* line 56, ../sass/home.scss */
 #section2 {
   padding: 80px 40px;
 }
-/* line 38, ../sass/home.scss */
+/* line 59, ../sass/home.scss */
 #section2 .avatar {
   float: left;
   width: 300px;
   margin: 0 40px 0 0;
 }
-/* line 43, ../sass/home.scss */
+/* line 64, ../sass/home.scss */
 #section2 .avatar img {
   width: 100%;
 }
-/* line 48, ../sass/home.scss */
+/* line 69, ../sass/home.scss */
 #section2 .info {
   float: left;
   width: 400px;
 }
-/* line 52, ../sass/home.scss */
+/* line 73, ../sass/home.scss */
 #section2 .info h2 {
   width: 100%;
   margin: 0 0 20px 0;
   font-size: 16px;
 }
-/* line 57, ../sass/home.scss */
+/* line 78, ../sass/home.scss */
 #section2 .info p {
   width: 100%;
   margin: 0 0 20px 0;

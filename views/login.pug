@@ -4,13 +4,14 @@ block stylesheets
   link(rel='stylesheet', href='/stylesheets/users.css')
 
 block content
-  #login_form
+  #login-form
+    h2#form-title Login
     form(method="post" action="/users/login")
       .row
         span email
-        input(type="text" name="email")
+        input(type="text" name="email"  autocomplete="off")
       .row
         span password
-        input(type="password" name="password")
+        input(type="password" name="password" autocomplete="off")
       .row
         input(id="submit" type="submit" value="submit!")
